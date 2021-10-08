@@ -1,15 +1,10 @@
-var imagesSource = document.getElementsByClassName('slider__item');
-var next = document.getElementById("slider__arrow_next");
-var prev = document.getElementById("slider__arrow_prev");
+let imagesSource = document.getElementsByClassName('slider__item');
+let next = document.querySelector("slider__arrow_next");
+let prev = document.querySelector("slider__arrow_prev");
 const images = Array.from(imagesSource);
-var totalImages = images.length;
+let totalImages = images.length;
 let index = 0;
 
-//const prev = document.querySelector('.prev');
-//const next = document.querySelector('.next');
-//const images = document.querySelector('.carousel').children;
-//const totalImages = images.length;
-//let index = 0;
 
 prev.addEventListener('click', () => {
   nextImage('next');
