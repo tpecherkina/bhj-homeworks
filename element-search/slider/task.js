@@ -1,6 +1,6 @@
 let imagesSource = document.getElementsByClassName('slider__item');
-let next = document.querySelector("slider__arrow_next");
-let prev = document.querySelector("slider__arrow_prev");
+let next = document.querySelector(".slider__arrow_next");
+let prev = document.querySelector(".slider__arrow_prev");
 const images = Array.from(imagesSource);
 let totalImages = images.length;
 let index = 0;
@@ -33,3 +33,4 @@ function nextImage(direction) {
   }
 images[index].classList.add('slider__item_active');
 }
+
