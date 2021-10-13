@@ -1,8 +1,8 @@
-let modalMain = document.getElementById("modal_main");
-let modalSuccess = document.getElementById("modal_success");
-let showSuccess = document.getElementsByClassName("show-success");
-let closeWindow = document.getElementsByClassName("modal__close_times")
-let modal = document.getElementsByClassName("modal");
+var modalMain = document.getElementById("modal_main");
+var modalSuccess = document.getElementById("modal_success");
+var showSuccess = document.getElementsByClassName("show-success");
+var closeWindow = document.getElementsByClassName("modal__close_times")
+var modal = document.getElementsByClassName("modal");
 
 modalMain.classList.add("modal_active");
 
