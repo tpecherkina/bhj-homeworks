@@ -7,11 +7,11 @@ let index = 0;
 
 
 prev.addEventListener('click', () => {
-  nextImage('next');
+  nextImage('prev');
 })
 
 next.addEventListener('click', () => {
-  nextImage('prev');
+  nextImage('next');
 })
 
 function nextImage(direction) {
