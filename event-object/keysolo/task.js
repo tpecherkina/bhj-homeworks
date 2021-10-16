@@ -8,6 +8,7 @@ class Game {
     this.reset();
 
     this.registerEvents();
+   
   }
 
   reset() {
@@ -16,7 +17,19 @@ class Game {
     this.lossElement.textContent = 0;
   }
 
-  registerEvents() {
+  registerEvents(event) {
+
+    document.addEventListener('keyup', (event) => {
+      let keyname = event.key;
+      let keynameLower = keyname.toLowerCase();
+      if(keynameLower === this.currentSymbol.textContent) {
+        this.success()
+     } else {
+        this.fail();
+     }
+   })
+   
+   
     /*
       TODO:
       Написать обработчик события, который откликается
@@ -56,7 +69,7 @@ class Game {
 
   getWord() {
     const words = [
-        'bob',
+        'Bob',
         'awesome',
         'netology',
         'hello',
@@ -87,4 +100,3 @@ class Game {
 }
 
 new Game(document.getElementById('game'))
-
