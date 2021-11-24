@@ -11,6 +11,9 @@ toolTipTarget.forEach(item => {
 		
 		toolTip.innerText = item.title;
 		item.insertAdjacentElement('afterEnd', toolTip);
+	        let topBorder = item.getBoundingClientRect().bottom;
+		let leftBorder = item.getBoundingClientRect().left;
+		toolTip.setAttribute('style', `top: ${topBorder}px; left: ${leftBorder}px`)
 		toolTip.classList.toggle("tooltip_active");
 	})
 });
