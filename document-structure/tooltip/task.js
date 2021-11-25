@@ -8,7 +8,8 @@ toolTipTarget.forEach(item => {
 	item.addEventListener('click', (e) => {
 		e.preventDefault();
 		if (item.title === toolTip.innerText) {
-			toolTip.classList.remove('tooltip_active');
+			toolTip.classList.toggle('tooltip_active');
+			return; 
 			
 			
 		}
